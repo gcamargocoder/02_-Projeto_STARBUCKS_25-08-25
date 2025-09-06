@@ -1,0 +1,45 @@
+<!DOCTYPE html> <!-- versão do html (5) -->
+<html lang="pt-br"> <!-- escolha da linguagem -->
+
+<head>
+    <meta charset="UTF-8"> <!-- configuração dos caracteres (nosso alfabeto) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- compatibilidade responsiva -->
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <img src="img/logo.png" alt="imagem logo starbucks">
+    <!-- SRC source - origem da imagem -->
+     <div class="circulo"></div>
+     
+    <div class="conteudo">
+
+        <div class="caixa-texto">
+            <h1>It's not just Coffee, it's <span>Starbucks</span></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi explicabo nihil rem inventore atque laborum
+                error est.
+                Dolores vel beatae praesentium recusandae, libero consectetur aliquid cum eius perferendis velit magni.</p>
+            <button>Clique no SININHO</button>
+        </div>
+
+        <div class="caixa-imagem">
+            <img class="copo-starbucks" src="img/img1.png" alt="copo starbucks">
+        </div>
+    </div>
+    
+    <div class="menu">
+        <img src="img/thumb1.png" class="botao-menu" alt="copinho-1-starbucks" onclick="trocaImagem('img/img1.png'); trocaFundo('#017143')">
+        <img src="img/thumb2.png" class="botao-menu" alt="copinho-2-starbucks" onclick="trocaImagem('img/img2.png'); trocaFundo('#eb7495')">
+        <img src="img/thumb3.png" class="botao-menu" alt="copinho-3-starbucks" onclick="trocaImagem('img/img3.png'); trocaFundo('#d752b1')">
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
