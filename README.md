@@ -3,10 +3,10 @@
 </h1>
 
 <p align="center">
-  <img src="img_preview.png" alt="App Preview" width="180px">
+  <img src="https://github.com/gcamargocoder/02_-Projeto_STARBUCKS_25-08-25/blob/main/img_Tablet.png" alt="App Preview" width="180px">
 </p>
 
-<h2 align="center">Interactive Coffee Cup Landing Page</h2>
+<h2 align="center">Starbucks is the largest coffee shop chain in the world.</h2>
 
 <p align="center">
   <a href="#about">About</a> •
@@ -19,7 +19,7 @@
 
 ## 🌐 Live Demo
 
-👉 [**Try the project online**](https://gcamargocoder.github.io/Starbucks_Interactive_Cup/)  
+👉 [**Try the project online**](https://gcamargocoder.github.io/02_-Projeto_STARBUCKS_25-08-25/)  
 
 ---
 
@@ -60,12 +60,12 @@ This project demonstrates my ability to build **interactive, visually appealing,
 ## 📱💻 Layout
 
 <p align="center">
-  <img src="img_desktop.png" alt="Desktop Version" width="600px">
+  <img src="https://github.com/gcamargocoder/02_-Projeto_STARBUCKS_25-08-25/blob/main/img_Desktop.png" alt="Desktop Version" width="600px">
 </p>
 
 <p align="center">
-  <img src="img_tablet.png" alt="Tablet Version" width="400px">
-  <img src="img_mobile.png" alt="Mobile Version" width="250px">
+  <img src="https://github.com/gcamargocoder/02_-Projeto_STARBUCKS_25-08-25/blob/main/img_Tablet.png" alt="Tablet Version" width="400px">
+  <img src="https://github.com/gcamargocoder/02_-Projeto_STARBUCKS_25-08-25/blob/main/img_Cell_Phone.png" alt="Mobile Version" width="250px">
 </p>
 
 ---
@@ -79,6 +79,6 @@ This project demonstrates my ability to build **interactive, visually appealing,
 
 Made with ♥ by **Gilson Camargo** 🚀  
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gilcamargo/)  
-[![GitHub](https://img.shields.io/badge/GitHub-000?logo=github&logoColor=white)](https://github.com/gcamargocoder)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/gilcamargo/)
+[![GitHub](https://img.shields.io/badge/GitHub-000?logo=github&logoColor=white)](https://github.com/gcamargocoder)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:gcamargocoder@gmail.com)
