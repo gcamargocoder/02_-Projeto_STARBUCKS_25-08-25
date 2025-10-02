@@ -1,5 +1,4 @@
-/* Asterisco significa padronizar tudo para os diversos navegadores deixar sempre no topo */
-
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -8,24 +7,28 @@
 }
 
 body {
-    padding-top: 30px;
-    padding-right: 80px;
-    padding-left: 80px;
+    padding: 30px 80px;
+    overflow-x: hidden;
 }
 
+/* Conteúdo principal */
 .conteudo {
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
 }
 
+/* Caixa de texto */
 .caixa-texto {
-    width: 600px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    z-index: 2;
 }
 
 h1 {
-    columns: #333333;
     font-size: 60px;
     font-weight: bold;
 }
@@ -33,67 +36,122 @@ h1 {
 span {
     color: #017143;
     font-size: 70px;
-    font-weight: 900px;
+    font-weight: 900;
 }
 
 p {
     font-size: 16px;
+    margin-top: 15px;
 }
 
 button {
-    background: #017143;
-    color: #ffffff;
-    border-radius: 40px;
+    background-color: #017143;
+    color: #fff;
     border: none;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 40px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: transform 0.2s ease, opacity 0.2s ease, background-color 0.2s ease;
+    margin-top: 30px;
 }
 
+/* Efeito ao passar o cursor */
 button:hover {
-    background: #0a4844;
+    background-color: #0a4844;
+    transform: scale(1.05);
+    opacity: 0.9;
 }
 
-.caixa-imagem {
-    width: 600px;
+/* Efeito ao clicar */
+button:active {
+    transform: scale(0.95);  /* botão “afunda” levemente */
+    opacity: 0.8;            /* leve escurecimento */
+}
+
+/* Círculo principal atrás do copo */
+.circulo {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: #017143;
     display: flex;
-    justify-content: flex-end;
-    margin-top: 200px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: background 0.5s ease, transform 0.5s ease;
 }
 
+/* Copo Starbucks */
+.copo-starbucks {
+    width: 200px;
+    transition: transform 0.5s ease;
+}
+
+/* Animação do copo */
+.animar-copo {
+    transform: scale(1.1);
+}
+
+/* Menu de copinhos */
 .menu {
     display: flex;
     justify-content: center;
-
+    margin-top: 20px;
+    z-index: 2;
 }
 
 .botao-menu {
-    position: relative;
-    top: -100px;
     width: 50px;
     cursor: pointer;
-    transition: 0.5s;
+    margin: 0 10px;
+    transition: transform 0.5s;
 }
 
 .botao-menu:hover {
-    transform: translateY(-30px);
-
+    transform: translateY(-10px);
 }
 
-.copo-starbucks {
-    position: relative;
-    top: -20px;
-    width: 200px;
+/* Responsividade */
+@media (max-width: 1024px) {
+    .conteudo {
+        justify-content: center;
+    }
+
+    .circulo {
+        width: 300px;
+        height: 300px;
+    }
+
+    .copo-starbucks {
+        width: 150px;
+    }
 }
 
-.circulo {
-    background: #017143;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 100px;
-    left: 0;
-    clip-path: circle(500px at right 600px);
-    z-index: -1;
+@media (max-width: 480px) {
+    body {
+        padding: 20px 10px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    span {
+        font-size: 42px;
+    }
+
+    .circulo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .copo-starbucks {
+        width: 120px;
+    }
+
+    .botao-menu {
+        width: 40px;
+        margin: 0 5px;
+    }
 }
